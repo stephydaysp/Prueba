@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prueba 1</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-  <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
-  <header>
-    <img src="./Assets/img/viajes.svg" alt="logo">
-    <h2>Viajes Chile</h2>
-  </header>
-  <!--Barra Navegación-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Quiénes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Destacados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
+
+<body class="bg-dark">
+
+  <header class=" container-fluid align-items-center">
+    <!-- titulo y logo -->
+    <div class="row ">
+      <nav class="navbar fixed-top navbar-expand-lg position-absolute ">
+        <!--Barra Navegación-->
+        <img class="logo col-1" src="./Assets/img/viajes.svg" alt="logo">
+        <h2 class="col-3">Viajes Chile</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  offset-md-3 col-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#carrusel">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#presentacion1">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#presentacion2">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
       </nav>
+    </div>
+  </header>
+
   <!-- Carousel -->
-<main class="container-fluid">
-    <section class="carrusel">
+    <section class="carrusel" id="carrusel">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -65,83 +72,83 @@
     </div>
   </section>
   <!-- Presentación -->
-  <section class="presentacion1">
-    <div class="titulos">
+  <main class="container">
+  
+  <section class="presentacion1 row justify-content-around" id="presentacion1">
+    <div class="titulos col-12">
     <h2>¿Quiénes Somos?</h2>
     </div>
   <!--Tarjeta de presetación 1-->
-    <div class="card">
-      <div class="card-header">
-        Featured
+    <div class="card col-4">
+      <div class="card-header bg-info">
+        <i class="bi bi-airplane-engines"></i>
       </div>
-      <div class="card-body">
+      <div class="card-body bg-dark">
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.
         </p>
       </div>
     </div>
   <!--Tarjeta de presetación 2-->
-    <div class="card">
-      <div class="card-body">
+    <div class="card col-4">
+      <div class="card-body bg-dark">
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.
         </p>
       </div>
-      <div class="card-header">
-        Featured
+      <div class="card-header bg-info">
+       <i class="bi bi-triangle"></i>
       </div>
     </div>
   <!--Tarjeta de presetación 3-->
-
-    <div class="card">
-      <div class="card-header">
-        Featured
+    <div class="card col-4">
+      <div class="card-header bg-info">
+        <i class="bi bi-sign-turn-slight-left"></i>
       </div>
-      <div class="card-body">
+      <div class="card-body bg-dark">
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.
         </p>
       </div>
     </div>
   </section>
   <!--Tarjetas con imágenes-->
-  <section class="presentacion2">
-    <div class="titulos">
+  <section class="presentacion2 row justify-content-around" id="presentacion2">
+    <div class="titulos col-12">
       <h2>Destacados</h2>
       </div>
   <!--Tarjeta 1-->
-    <div class="card" style="width: 18rem;">
-      <img src="./Assets/img/card1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
+    <div class="card col-3" style="width: 18rem;">
+      <img src="./Assets/img/card1.jpg" class="card-img-top" alt="fondo zona sur">
+      <div class="card-body bg-info">
         <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.</p>
       </div>
     </div>
   <!--Tarjeta 2-->
-    <div class="card" style="width: 18rem;">
-      <img src="./Assets/img/card2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
+    <div class="card col-3" style="width: 18rem;">
+      <img src="./Assets/img/card2.jpg" class="card-img-top" alt="fondo norte-centro">
+      <div class="card-body bg-info">
         <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.</p>
       </div>
     </div>
   <!--Tarjeta 3-->
-     <div class="card" style="width: 18rem;">
-      <img src="./Assets/img/card3.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
+     <div class="card col-3" style="width: 18rem;">
+      <img src="./Assets/img/card3.jpg" class="card-img-top" alt="fondo norte">
+      <div class="card-body bg-info">
         <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.</p>
       </div>
     </div>
   <!--Tarjeta 4-->
-     <div class="card" style="width: 18rem;">
-      <img src="./Assets/img/card4.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
+     <div class="card col-3" style="width: 18rem;">
+      <img src="./Assets/img/card4.jpg" class="card-img-top" alt="fondo sur">
+      <div class="card-body bg-info">
         <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam nobis enim recusandae quidem consectetur earum blanditiis ea adipisci impedit, obcaecati sint nam quibusdam? Qui tempora eaque dignissimos voluptate voluptas.</p>
       </div>
-  
     </div>
   </section>
   <!--Contacto-->
-  <section class="contacto">
+  <section class="contacto" id="contacto">
       <div class="titulos">
        <h2>Contacto</h2>
       </div>
@@ -159,17 +166,23 @@
       <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button class="btn btn-info text-light" type="submit">Enviar</button>
   </form>  
 </section>
 </main>
   <!--Footer-->
-  <footer>
-    <h5>VIAJES CHILE</h5>
-    <div class="redessociales">
+  <footer class="row bg-info">
+    <h5 class="col-6">VIAJES CHILE</h5>
+    <div class="redessociales col-6">
+      <a href="https://www.github.com" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
     </div>
   </footer>
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
 </body>
 </html>

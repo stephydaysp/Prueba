@@ -1,8 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap');
+
+body{
+   color:white;
+   font-family: 'Inter Tight', sans-serif;
+}
+.container-fluid{
+   padding: 0;
+}
+.header{
+   position: fixed;
+}
+.logo{
+   margin: 1%;
+   max-width: 80px;
+}
+.navbar{
+   background-color:rgba(253, 254, 254, 0);
+   scroll-behavior: smooth;
+}
+.titulos{
+   margin: 4%;
+   text-align: center;
+}
+.card{
+   padding: 0;
+   margin-bottom: 2%;
+}
 .presentacion1{
     display: none; 
  }
+.presentacion2 img{
+height:192px;
+object-fit: cover;
+}
+.bi{
+   padding: 45%;
+}
+form{
+margin-bottom: 5%;
+}
+footer {
+   padding: 2% 5%;
+}
+.redessociales .bi {
+   color:white;
+   padding: 0 3%;
+}
 @media (min-width: 768px) {
     .presentacion1{
-       display: block; 
+       display: flex; 
     }
  }
